@@ -1,0 +1,93 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffacd; 
+    color: #333;
+}
+
+header {
+    background-color: #98fb98; 
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1215ca;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease, opacity 0.3s ease; 
+}
+
+
+nav a:hover {
+    color: #c2550def; 
+    opacity: 0.8; 
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.centered-image {
+    text-align: center;
+}
+
+.centered-image img {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+    color: #333;
+}
+
+hr {
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section h2, section h3, section p, section img {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+u1 {
+    margin-bottom: 20px; /
+}

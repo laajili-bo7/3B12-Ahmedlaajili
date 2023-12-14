@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Accueil - Portfolio d'Ahmed Laajili</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+
 </head>
 <body>
     <header>
@@ -21,16 +23,16 @@
     <section>
         <h2 style="color: green;">Bienvenue sur mon portfolio !</h2>
         <hr>
-        <div class="centered-image">
-            <img src="image\bof.jpg" width="450" height="400">
+        <div class="circle">
+            <img src="image/bof.jpg" alt="">
         </div>
         <hr>
-        <h3 style="color: brown;">Présentation personnelle !</h3>
+        <h3 style="color: brown;">Présentation personnelle </h3>
         <p>Nom: Ahmed Laajili<br>
            Âge: 22 ans<br>
            Lieu de résidence: Kelibia, Nabeul</p>
         <hr>
-        <h3 style="color: brown;">Parcours académique!</h3>
+        <h3 style="color: brown;">Parcours académique</h3>
         <p>Baccalauréat en spécialité technique en 2020<br>
            Licence en travaux publics - Institut Supérieur des Études Technologiques de Nabeul</p>
         <hr>
@@ -45,11 +47,36 @@
         <h3 style="color: brown;">Compétences clés</h3>
         <p>Compétences développées: conception, analyse, résolution de problèmes, travail d'équipe, programmation</p>
         <hr>
+         <div class="intérêt">
+            <h3 style="color: brown;">Intérêt</h3>
+            <div class="intérêt_items">
+            <div class="intérêt_item">
+            <i data-feather="music"></i>
+            <span>Music</span>
+         </div>
+         <div class="intérêt_item">
+            <i data-feather="book"></i>
+            <span>Books</span>
+         </div>
+         <div class="intérêt_item">
+            <i data-feather="map"></i>
+            <span>travel</span>
+         </div>
+        </div>
+    </div>
+         
+
+
+
+
     </section>
 
     <footer>
         <p><strong>&copy; 2023 Ahmed Laajili - Portfolio personnel</strong></p>
     </footer>
+    <script>
+        feather.replace();
+      </script>
 </body>
 </html>
 

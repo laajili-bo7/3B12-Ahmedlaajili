@@ -3,23 +3,23 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #7a6868, #e0e0e0);
+    background: linear-gradient(to bottom, #ECF6F8, #FEEAA1);
 }
 
 
 header {
-    background: #333;
+    background: #18535F;
     color: white;
    
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+nav{
+    padding: 20px;
 
-nav {
-    background: #444;
-    border-bottom: 2px solid #666;
 }
+
 
 nav ul {
     list-style: none;
@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #489b38;
+    background: #ECF6F8;
 }
 
 
@@ -55,7 +55,7 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
+    background: #18535F;
     color: #fff;
 }
 
@@ -71,7 +71,7 @@ img {
 
 h1, h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #18535F;
 }
 
 
@@ -96,3 +96,20 @@ h1, h2 {
 .footer-animation {
     animation: fadeIn 1s ease-in-out;
 }
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: #0056b3;
+  }

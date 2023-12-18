@@ -9,24 +9,65 @@
 </head>
 <body>
     <header>
-        <h1 style="color: red;">Accueil</h1>
+        
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html" style="text-decoration: underline; color: white;">Accueil</a></li>
                 <li><a href="parcours.html">Parcours</a></li>
                 <li><a href="experiences.html">Expériences</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            
         </nav>
+        
     </header>
 
     <section>
-        <h2 style="color: green;">Bienvenue sur mon portfolio !</h2>
-        <hr>
+        
+        <h2 style="color: #18535F;">Bienvenue sur mon portfolio !</h2>
+        <style>
+            /* Example CSS styles for the div elements */
+            .circle {
+              width: 100px;
+              height: 100px;
+              overflow: hidden;
+              border-radius: 50%;
+              position: relative;
+              margin: 10px;
+              margin-right: 20px;
+              float: right;
+              transition: transform 0.3s ease-in-out;
+            }
+        
+            .circle img {
+              width: 100%;
+              height: auto;
+              display: block;
+            }
+        
+            .circle:hover {
+              transform: scale(1.5);
+            }
+          </style>
         <div class="circle">
             <img src="image/bof.jpg" alt="">
+           
         </div>
-        <hr>
+        <script>
+            // JavaScript code to add additional hover effect
+            const zoomableDiv = document.getElementById('zoomableDiv');
+        
+            zoomableDiv.addEventListener('mouseenter', () => {
+              zoomableDiv.style.border = '2px solid red'; // Change border color on hover
+              // Add any additional JavaScript code you want to run on hover
+            });
+        
+            zoomableDiv.addEventListener('mouseleave', () => {
+              zoomableDiv.style.border = ''; // Reset border color on mouse leave
+              // Add any additional JavaScript code you want to run on mouse leave
+            });
+          </script>
+          <div class="container" style="margin-top: 40px;">
         <h3 style="color: brown;">Présentation personnelle </h3>
         <p>Nom: Ahmed Laajili<br>
            Âge: 22 ans<br>
@@ -52,24 +93,47 @@
             <div class="intérêt_items">
             <div class="intérêt_item">
             <i data-feather="music"></i>
-            <span>Music</span>
+            <span>Musique</span>
          </div>
          <div class="intérêt_item">
             <i data-feather="book"></i>
-            <span>Books</span>
+            <span>Livres</span>
          </div>
          <div class="intérêt_item">
             <i data-feather="map"></i>
-            <span>travel</span>
+            <span>Voyager</span>
          </div>
         </div>
     </div>
+
+
+          </div>
+        
          
 
 
 
 
     </section>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+    <script>
+      window.onscroll = function() { scrollFunction() };
+  
+      function scrollFunction() {
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      }
+  
+      function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;  
+      }
+    </script>
 
     <footer>
         <p><strong>&copy; 2023 Ahmed Laajili - Portfolio personnel</strong></p>

@@ -7,11 +7,11 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f8f8f8;
-    color: #333;
+    color: #18535F;
 }
 
 header {
-    background-color: #333;
+    background-color: #18535F;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -38,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #2ecc71;
+    color: #18535F;
 }
 
 section {
@@ -56,7 +56,7 @@ section:hover {
 }
 
 h2 {
-    color: #2ecc71;
+    color: #18535F;
 }
 
 p {
@@ -64,14 +64,14 @@ p {
 }
 
 footer {
-    background-color: #333;
+    background-color: #18535F;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
 
 footer:hover {
-    background-color: #2ecc71;
+    background-color: #18535F;
     transition: background-color 0.3s ease;
 }
 

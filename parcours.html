@@ -13,24 +13,25 @@
 </head>
 <body>
     <header>
-        <h1 style="color: red;">Parcours Académiques</h1>
+ 
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="parcours.html" style="text-decoration: underline; color: white;">Parcours</a></li>
                 <li><a href="experiences.html">Expériences</a></li>
                 <li><a href="contact.html">Contact</a></li>
-               <hr>
+               
+            </ul>
+            <hr>
                 <div class="centered-image">
                     <img src="image\bo8.jpg" width="350" height="200">
                 </div>
             <hr>
-            </ul>
         </nav>
     </header>
 
     <section>
-        <h2 style="color: green;">Mon parcours Académiques </h2>
+        <h2 style="color: #18535F;">Mon parcours Académiques </h2>
         <p>J'ai obtenu mon baccalauréat en spécialité technique en 2020. Après cela, j'ai poursuivi mes études en génie civil à l'Institut Supérieur des Études Technologiques de Nabeul pendant trois ans, ce qui m'a permis d'obtenir ma licence en travaux publics.</p>
  <hr>
 <div>
@@ -38,6 +39,24 @@
 </div>
 <hr>    
 </section>
+<button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+<script>
+  window.onscroll = function() { scrollFunction() };
+
+  function scrollFunction() {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  }
+
+  function scrollToTop() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;  }
+</script>
 
 
     <footer>

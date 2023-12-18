@@ -12,19 +12,18 @@
         }   
     </style>
     <header>
-        <h1 style="color: red;">Expériences</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="parcours.html">Parcours</a></li>
-                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="experiences.html" style="text-decoration: underline; color: white;">Expériences</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
-        <h2 style="color: green;">Mes expériences professionnelles et stages</h2>
+        <h2 style="color: #18535F;">Mes expériences professionnelles et stages</h2>
         <h3 style="color: brown;">Stage dans un bureau d'études à Kelibia</h3>
         <p>J'ai travaillé lors du premier stage avec un ingénieur civil pendant 25 jours. Nous avons visité plusieurs chantiers de construction en cours, ce qui m'a permis d'acquérir de l'expérience dans le domaine.</p>
         <hr>
@@ -37,6 +36,79 @@
         <hr>
     </section>
 
+    <section>
+
+        <div class="photo-container">
+            <div class="photo" onclick="openModal('photo1.jpg')">
+              <img src="./image/bo15.jpg" alt="Photo 1">
+            </div>
+            <div class="photo" onclick="openModal('photo2.jpg')">
+              <img src="./image/bo16.jpg" alt="Photo 2">
+            </div>
+            <div class="photo" onclick="openModal('photo3.jpg')">
+              <img src="./image/bo17.jpg" alt="Photo 3">
+            </div>
+            <div class="photo" onclick="openModal('photo4.jpg')">
+              <img src="./image/bo19.jpg" alt="Photo 4">
+            </div>
+            <div class="photo" onclick="openModal('photo5.jpg')">
+                <img src="./image/bo20.jpg" alt="Photo 4">
+              </div>
+              <div class="photo" onclick="openModal('photo5.jpg')">
+                <img src="./image/b21.jpg" alt="Photo 4">
+              </div>
+
+          </div>
+        
+          <div class="modal" onclick="closeModal()">
+            <img id="modalImage" src="" alt="Modal Image">
+          </div>
+        
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const photos = document.querySelectorAll(".photo");
+              const modal = document.querySelector(".modal");
+              const modalImage = document.getElementById("modalImage");
+          
+              photos.forEach((photo) => {
+                photo.addEventListener("click", () => {
+                  const photoSrc = photo.querySelector("img").src;
+                  modalImage.src = photoSrc;
+                  modal.classList.add("active");
+                });
+              });
+          
+              modal.addEventListener("click", () => {
+                modal.classList.remove("active");
+              });
+          
+              modalImage.addEventListener("click", (event) => {
+                event.stopPropagation();
+              });
+            });
+          </script>
+
+
+    </section>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+    <script>
+      window.onscroll = function() { scrollFunction() };
+  
+      function scrollFunction() {
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      }
+  
+      function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;  
+      }
+    </script>
     <footer>
         <p><strong>&copy; 2023 Ahmed Laajili - Portfolio personnel</strong></p>
     </footer>
